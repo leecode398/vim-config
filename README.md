@@ -98,7 +98,7 @@ we'll also symlink it for regular Vim:
 
 ```bash
 mkdir ~/.config
-git clone git://github.com/PegasusWang/vim-config.git ~/.config/nvim
+git clone git://github.com/lixiang-code/vim-config.git ~/.config/nvim
 cd ~/.config/nvim
 ln -s ~/.config/nvim ~/.vim  # For "regular" Vim
 ```
