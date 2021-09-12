@@ -67,6 +67,10 @@ nnoremap zh z4h
 " Resize tab windows after top/bottom window movement
 nnoremap <C-w>K <C-w>K<C-w>=
 nnoremap <C-w>J <C-w>J<C-w>=
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <C-k> <C-w>k
+map <C-j> <C-w>j
 
 " Improve scroll, credits: https://github.com/Shougo
 " noremap <expr> <C-f> max([winheight(0) - 2, 1])
@@ -120,10 +124,10 @@ nmap >>  >>_
 nmap <<  <<_
 
 " Drag current line/s vertically and auto-indent
-nnoremap <Leader>k :m-2<CR>==
-nnoremap <Leader>j :m+<CR>==
-vnoremap <Leader>k :m'<-2<CR>gv=gv
-vnoremap <Leader>j :m'>+<CR>gv=gv
+" nnoremap <Leader>k :m-2<CR>==
+" nnoremap <Leader>j :m+<CR>==
+" vnoremap <Leader>k :m'<-2<CR>gv=gv
+" vnoremap <Leader>j :m'>+<CR>gv=gv
 
 " Duplicate lines
 nnoremap <Leader>d m`YP``
@@ -158,7 +162,7 @@ nnoremap \ ;
 nnoremap <expr> gp '`['.strpart(getregtype(), 0, 1).'`]'
 
 " Quick substitute within selected area
-xnoremap sg :s//gc<Left><Left><Left>
+" xnoremap sg :s//gc<Left><Left><Left>
 
 " C-r: Easier search and replace visual/select mode
 xnoremap <C-r> :<C-u>call <SID>get_selection('/')<CR>:%s/\V<C-R>=@/<CR>//gc<Left><Left><Left>

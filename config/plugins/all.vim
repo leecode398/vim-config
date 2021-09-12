@@ -363,12 +363,12 @@ if dein#tap('sideways.vim')
 	xmap <silent> i, <Plug>SidewaysArgumentTextobjI
 endif
 
-if dein#tap('splitjoin.vim')
-	let g:splitjoin_join_mapping = ''
-	let g:splitjoin_split_mapping = ''
-	nmap sj :SplitjoinJoin<CR>
-	nmap sk :SplitjoinSplit<CR>
-endif
+" if dein#tap('splitjoin.vim')
+"   let g:splitjoin_join_mapping = ''
+"   let g:splitjoin_split_mapping = ''
+"   nmap sj :SplitjoinJoin<CR>
+"   nmap sk :SplitjoinSplit<CR>
+" endif
 
 if dein#tap('linediff.vim')
 	vnoremap <Leader>mdf :Linediff<CR>
@@ -428,7 +428,7 @@ if dein#tap('vim-textobj-function')
 endif
 
 if dein#tap('vim-easymotion')
-	nmap ss <Plug>(easymotion-s2)
+	nmap z <Plug>(easymotion-s)
 endif
 
 if dein#tap('vim-airline')
@@ -475,7 +475,7 @@ if dein#tap('python-mode')
 	let g:pymode_rope_autoimport = 0
 	let g:pymode_rope_complete_on_dot = 0
 	let g:pymode_rope_lookup_project = 0
-	let g:pymode_rope_goto_definition_bind = "<C-]>"
+	" let g:pymode_rope_goto_definition_bind = "<C-]>"
 	let g:pymode_rope_goto_definition_cmd = 'vnew'
 	let g:pymode_rope_regenerate_on_write = 0
 
@@ -506,7 +506,7 @@ endif
 
 if dein#tap('vim-go')
 	autocmd user_events FileType go
-		\   nmap <C-]> <Plug>(go-def)
+		\   nmap <C-[> <Plug>(go-def)
 		\ | nmap <Leader>god  <Plug>(go-describe)
 		\ | nmap <Leader>goc  <Plug>(go-callees)
 		\ | nmap <Leader>goC  <Plug>(go-callers)

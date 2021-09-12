@@ -25,7 +25,7 @@ function! s:on_lsp_buffer_enabled() abort
 	nmap <silent><buffer> gr     <Plug>(lsp-references)
 	nmap <silent><buffer> gi     <Plug>(lsp-peek-implementation)
 	nmap <silent><buffer> gy     <Plug>(lsp-peek-type-definition)
-	nmap <silent><buffer> <C-]>  <Plug>(lsp-definition)
+	" nmap <silent><buffer> <C-]>  <Plug>(lsp-definition)
 	nmap <silent><buffer> g<C-]> <Plug>(lsp-peek-definition)
 	nmap <silent><buffer> gd     <Plug>(lsp-peek-declaration)
 	nmap <silent><buffer> gY     <Plug>(lsp-type-hierarchy)

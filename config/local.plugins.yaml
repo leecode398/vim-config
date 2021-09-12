@@ -39,7 +39,7 @@
   on_ft: [ markdown, pandoc.markdown, rmd ]
   build: cd app & npm install
   hook_source: |
-    let g:mkdp_auto_close = 0
+    let g:mkdp_auto_close = 1
 
 # Python related, NOTE python-mode use submodule
 # cd ~/.cache/vim/dein/repos/github.com; mkdir python-mode

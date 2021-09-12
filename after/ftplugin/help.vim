@@ -37,7 +37,7 @@ function! s:setup_buffer()
 	nnoremap <silent><buffer> q :quit<CR>
 
 	" Jump to links with enter
-	nmap <buffer> <CR> <C-]>
+	" nmap <buffer> <CR> <C-]>
 
 	" Jump back with backspace
 	nmap <buffer> <BS> <C-T>
